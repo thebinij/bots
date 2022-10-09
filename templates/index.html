@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="'viewport" content="width=device-width, initial-scale=1">
+        <title>My Bot</title>
+    </head>
+    <body>
+        <h1>Welcome to Human!!</h1>
+        <form method="POST">
+            <label>Write a message:</label>
+            <input type="text" name="textbox" value = {{user_text | safe }}> <br>
+            <label>Reply from Bot:</label>
+            <label>{{output | safe }}</label><br>
+            <button type="submit" name="submit">Send msg!</button>
+        </form>
+    </body>
+    </html>
